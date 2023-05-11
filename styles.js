@@ -18,6 +18,7 @@ export default createGlobalStyle`
   }
 
   button[type='submit'] {
+    display: block;
     font-size: 1.5rem;
     padding: 0.25rem 1rem;
     background-color: rebeccapurple;

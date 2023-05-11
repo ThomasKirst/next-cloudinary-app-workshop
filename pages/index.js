@@ -75,6 +75,15 @@ export default function Home() {
           onChange={handleFileChange}
           value={imageValue}
         />
+        {image && (
+          <Image
+            src={URL.createObjectURL(image)}
+            width={150}
+            height={150}
+            alt="Preview of the image to upload"
+            style={{ objectFit: 'cover' }}
+          />
+        )}
         <button type="submit" disabled={!image}>
           {isUploading ? 'Uploading …' : 'Upload'}
         </button>
