@@ -23,8 +23,17 @@ export default createGlobalStyle`
     background-color: rebeccapurple;
     border: none;
     border-radius: 0.25rem;
-    margin-top: 1rem;
+    margin: 1rem 0 1.5rem;
     color: white;
+  }
+  button[type='submit']:disabled {
+    background-color: gray;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2rem;
   }
 
   @media (prefers-color-scheme: dark) {
